@@ -9,3 +9,18 @@ Thinking about:
 - Where and how to validation inputs. In the program or in the test specs?
 - Functional programming vs OOP
 - Writing more meaningful tests
+
+
+Second Iteration
+================
+
+Refactored some of the repetitive code for calculating the total for speciality Items. Cleaned up some variables, setting markup percentages to constants.
+
+Added some tests for electronics and unlisted categories.
+
+Refactored further! When since we simply add human markup price and specialty item markup price to the standard markup price we can have one calculation for total price that works for all cases. If human markup price and specialty item markup price are 0 the calculation will return the standard markup price.
+
+Thinking about:
+- renaming Variables
+- if there is a need for functional programming with a program of this simplicity. If human price and specialty price can be set to 0, things become fairly straight-forward.
+- still thinking of validations 
