@@ -13,6 +13,14 @@ describe('NuPack Product Repacking Pricing System', function () {
 
     it('calculates markup price of product #3', function () {
       expect(costOfJob(12456.95, 4, "books")).toEqual(13707.63);
+    });
+
+    it('calculates markup price of product #4', function () {
+      expect(costOfJob(100, 0, "electronics")).toEqual(107.1);
+    });
+
+    it('calculates markup price of product #5', function () {
+      expect(costOfJob(100, 0)).toEqual(105);
     })
   });
 

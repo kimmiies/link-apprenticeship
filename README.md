@@ -6,10 +6,12 @@ npm 3.10.10
 jasmine v2.5.3
 jasmine-core v2.5.2
 
+
 Dependencies
 ============
 
-Run 'npm install' to gain jasmine dependencies
+Run 'npm install -g jasmine'
+
 
 Running Tests
 =============
