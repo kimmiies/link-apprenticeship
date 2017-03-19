@@ -1,11 +1,15 @@
 describe('NuPack', function () {
-  var NuPack = require('../lib/Nupack');
+  var costOfJob = require('../lib/Nupack');
 
-  it('adds two numbers together', function () {
-    expect(1 + 2).toEqual(4);
+  it('calculates markup price of product #1', function () {
+    expect(costOfJob(1299.99, 3, "food")).toEqual(1591.58);
   });
 
-  it('calculates markup price of product', function () {
-    expect(CostOfJob(12456.95, 4, "books")).toEqual(13707.63);
+  it('calculates markup price of product #2', function () {
+    expect(costOfJob(5432, 1, "drugs")).toEqual(6199.81);
+  });
+
+  it('calculates markup price of product #3', function () {
+    expect(costOfJob(12456.95, 4, "books")).toEqual(13707.62778);
   });
 });
