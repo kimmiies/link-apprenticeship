@@ -19,8 +19,8 @@ describe('NuPack Product Repacking Pricing System', function () {
       expect(costOfJob(100, 0, "electronics")).toEqual(107.1);
     });
 
-    it('calculates markup price of product #5', function () {
-      expect(costOfJob(100, 0)).toEqual(105);
+    it('It assumes standard markup price if no other information is given', function () {
+      expect(costOfJob(100)).toEqual(105);
     })
   });
 

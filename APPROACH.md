@@ -20,7 +20,9 @@ Added some tests for electronics and unlisted categories.
 
 Refactored further! When since we simply add human markup price and specialty item markup price to the standard markup price we can have one calculation for total price that works for all cases. If human markup price and specialty item markup price are 0 the calculation will return the standard markup price.
 
+Added a case to test what would happen if no manPower or item category was given. Standard markup price would be outputted
+
 Thinking about:
 - renaming Variables
-- if there is a need for functional programming with a program of this simplicity. If human price and specialty price can be set to 0, things become fairly straight-forward.
-- still thinking of validations 
+- still thinking of validations
+- if there is a need for functional programming with a program of this simplicity. If human price and specialty price can be set to 0, things become fairly straight-forward. Maybe the functions themselves can help with validations. Ie. Function checkManPowerRequired()
