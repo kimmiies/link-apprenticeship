@@ -44,3 +44,8 @@ Thinking about:
 
 Fourth Iteration
 ================
+
+Put everything in a function! This was addicting. Used console.logs to help with scope. Took out var keyword within functions to make their variables global to the parent function. The final function to calculate the total breaks the tests completely.
+
+Thinking about:
+- why did I just break all my tests :( 

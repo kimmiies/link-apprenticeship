@@ -24,6 +24,13 @@ describe('NuPack Product Repacking Pricing System', function () {
        expect(costOfJob(100, "hello")).toThrow("Please enter a number 0-100 for people required");
     });
 
+    it("The 'toThrowError' matcher is for testing a specific thrown exception", function() {
+      var test = "hello";
+
+      expect(validateManPower(test)).toThrowError("foo bar baz");
+    });
+
+
     it('throw an error if a parameter is not a number', function () {
       var baz = function() {
         throw 'what';
