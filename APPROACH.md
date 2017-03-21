@@ -26,3 +26,21 @@ Thinking about:
 - renaming Variables
 - still thinking of validations
 - if there is a need for functional programming with a program of this simplicity. If human price and specialty price can be set to 0, things become fairly straight-forward. Maybe the functions themselves can help with validations. Ie. Function checkManPowerRequired()
+
+
+Third Iteration
+===============
+
+Tried adding some validations:
+- The first to throw an error if the manPower parameter is not a number.
+- The second to check if itemCategory was contained in a list of speciality items.
+
+My test for the first throw error is failing and I think it's the test that has the problem not the code itself. Still trying to figure that out. The second validation was a bit unnecessary at the program assumes a standard item if "food", "drugs" or "electronics" are not passed in as a parameter. It would make the assumption of a standard item even if a number was passed in. For simplicity sake I will leave it at this.
+
+Thinking about:
+- Fixing the error test
+- Wrapping some parts of code in functions
+
+
+Fourth Iteration
+================

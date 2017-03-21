@@ -19,9 +19,19 @@ describe('NuPack Product Repacking Pricing System', function () {
       expect(costOfJob(100, 0, "electronics")).toEqual(107.1);
     });
 
-    it('It assumes standard markup price if no other information is given', function () {
-      expect(costOfJob(100)).toEqual(105);
-    })
+    // trying to test throw errors
+    it('throw an error if manPower paramater is not a number', function () {
+       expect(costOfJob(100, "hello")).toThrow("Please enter a number 0-100 for people required");
+    });
+
+    it('throw an error if a parameter is not a number', function () {
+      var baz = function() {
+        throw 'what';
+      };
+
+      expect(baz).toThrow('what');
+    });
+
   });
 
 });
