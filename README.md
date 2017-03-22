@@ -10,7 +10,9 @@ jasmine-core v2.5.2
 Dependencies
 ============
 
-Run 'npm install -g jasmine'
+Created a package.json with jasmine dependencies.
+
+In the case it does not work(it should), try 'npm install -g jasmine'
 
 
 Running Tests
