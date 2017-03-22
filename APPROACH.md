@@ -48,4 +48,18 @@ Fourth Iteration
 Put everything in a function! This was addicting. Used console.logs to help with scope. Took out var keyword within functions to make their variables global to the parent function. The final function to calculate the total breaks the tests completely.
 
 Thinking about:
-- why did I just break all my tests :( 
+- why did I just break all my tests :(
+
+
+Fifth Iteration
+===============
+
+ADDED BACK VAR keywords! Figured out the danger of making those variables global. Keeping scope local and setting functions to new variables to access their return values in other functions.
+
+Learned some more about throwing exceptions throughout the code and at the end of the program. This allows it to throw exceptions but still run until the end.
+
+Can't yet figure out why my test for the error throwing still fails. I can't find the right matcher to make the test pass. The code works for me so I think it is my test that is the problem but I will submit as it.
+
+Thinking about:
+- not calling things humanPrice. Will rename shortly
+- Why passing in parameters to certain functions made them undefined within the function. Yet they are available without passing them in as parameters.
